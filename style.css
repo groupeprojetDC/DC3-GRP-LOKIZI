@@ -1,0 +1,443 @@
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Style global */ 
+body{
+    background-color: #262E56;
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+body header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+
+}
+
+body header .logo {
+      height: 70px;
+      width:150px;
+}
+
+body header .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body header nav ul{
+    display: flex;
+    list-style: none;
+    gap:40px;
+
+}
+
+body header nav ul li a{
+    color:#707070;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition-duration: 1s;
+}
+
+body header nav ul li a:hover{
+    color:#242C58;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+/* Page concept */
+
+body main .hero {
+    height: calc(100vh - 100px);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body main .hero .content{
+    max-width: 900px;
+    width: 90vw;
+}
+
+body main .hero .content h1{
+    color:white;
+    font-size: 45px;
+    text-align: center;
+}
+body main .hero .content h2 strong{
+    color:#08BC6C;
+}
+
+body main .hero .content h2{
+    font-size: 30px;
+}
+
+body main .hero .content p{
+   font-size: 20px; 
+   max-width: 250px;
+}
+
+body main .hero .content .card{
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+body main .hero .content .card .text{
+    width: 50%;
+    padding-left: 10px;
+   
+}
+body main .hero .content .card .form{
+    width: 50%;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    body main .hero .content .card .form, body main .hero .content .card .text{
+        width: 100%;
+    }
+}
+
+body input, body select, body textarea{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 14px;
+    margin:10px 0px;
+    width: 70%;
+
+}
+
+body input::placeholder{
+    font-size: 20px;
+    color:black
+
+}
+
+body button{
+    padding: 18px 50px ;
+    border-radius: 14px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+body button.green{
+    background-color:#08BC6C;
+    color: white;
+    margin-top: 10px;
+}
+
+body .button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+body button.big{
+    padding: 30px 50px;
+    background-color: white;
+    margin: 40px auto;
+}
+
+body section.plateforme{
+    max-width: 1080px;
+    width: 95vw;
+    margin:auto;
+}
+
+body section.plateforme h2{
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+body section.plateforme h3{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+body section.plateforme .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color:white
+}
+
+body section.plateforme .content .image{
+    width: 400px;
+    height: 300px;
+    
+}
+
+@media(max-width: 768px){
+    body section.plateforme .content .image{
+        width: 100%;
+    }
+}
+
+body section.plateforme .content .image img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+body section.plateforme .content .text{
+    width: 50%;
+    
+}
+
+@media(max-width: 768px){
+    body section.plateforme .content .text{
+        width: 100%;
+    }
+
+}
+
+
+body section.plateforme .content .text p{
+   font-size: 22px;
+}
+
+body section.plateforme .content .text button{
+  text-align: center;
+  margin:60px auto
+}
+
+body section.chiffres{
+    width: 100%;
+    background-color:#F8F8FB;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+body section.chiffres img{
+    max-width: 1080px;
+    width: 95vw;
+    margin: auto;
+
+}
+
+body section.stores{
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    gap:30px;
+    align-items: center;
+
+}
+
+
+body section.stores img{
+    width: 200px;
+}
+
+
+/* Page Mon compte*/
+
+body section.form{
+    max-width: 1080px;
+    width: 95vw;
+    margin: auto;
+    color:white
+
+}
+
+
+body section.form p {
+    font-size:25px;
+
+}
+
+body section.form .form_group{
+    display: flex;
+    margin:15px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+body section.form  .form_group label{
+    width: 50%;
+    display: block;
+    font-size: 22px;
+}
+
+@media(max-width: 768px){
+    body section.form  .form_group label{
+    width: 100%;
+    }
+
+}
+body section.form  .form_group input:not([type="checkbox"]), body section.form  .form_group select{
+    width: 50%; 
+    display: block;
+}
+
+
+@media(max-width: 768px){
+    body section.form  .form_group input:not([type="checkbox"]), body section.form  .form_group select{
+        width: 100%;}
+}
+
+body section.form  .form_group p.checkbox{
+    display: flex;
+    gap: 20px;
+}
+
+body section.form  .form_group p.checkbox label{
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+body section.form  .form_group p.checkbox input{
+    width: inherit;
+    display: inline-block;
+}
+
+body section.form button{
+    margin: auto;
+}
+
+/** Page Vehicules **/
+
+body section.filtres{
+
+    max-width: 1080px;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 10px;
+    justify-content: center;
+
+    
+}
+
+
+body section.filtres button{
+
+    border: 2px solid white;
+    border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    
+}
+
+body section.vehicules{
+
+    max-width: 1080px;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+body section.vehicules article{
+    background-color: white;
+    display: flex;
+    gap: 50px
+
+}
+
+body section.vehicules article .image{
+    width: 200px;
+}
+
+
+body section.vehicules article .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body section.vehicules article h1, body section.vehicules article p{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body section.vehicules article .prix{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #262E56;
+    font-size: 35px;
+}
+
+
+/** Footer **/ 
+
+body footer{
+    width: 100vw;
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    gap: 100px;
+
+
+}
+
+body footer .logo{
+    width: 150px;
+    height: 80px;
+}
+body footer p{
+    margin: 0px;
+}
+
+body footer .logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+body footer ul{
+   list-style: none;
+   text-align: center;
+   padding-left: 0px;
+
+}
+
+body footer ul li:first-child{
+   font-weight: 700;
+ 
+ }
+
+
+
